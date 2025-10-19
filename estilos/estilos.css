@@ -1,0 +1,228 @@
+
+header {
+	background: linear-gradient(135deg, #0099cc, #00b894 );
+	color: white;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+h1{
+	font-family: "Montserrat", Sans-serif;
+	font-size: 2.8em;
+	margin: 0;
+	
+}
+h2{
+	font-family: "Montserrat";
+	font-size: 1.3em;
+	margin: 10px 0px 0px 0px;
+}
+
+main {
+	background-color: white;
+	border-radius: 8px;                 /* Esquinas redondeadas */
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+	padding: 40px;                       /* Espaciado interior */
+	margin: 30px auto;                   /* Espacio exterior (separación) */
+	max-width: 900px;            
+}
+
+footer {
+	background-color: #004c6d;
+	color: white;
+	padding: 20px 10px;
+	text-align: center;
+	margin-top: 40px;
+	
+}
+
+footer a {
+	color: #00b894;
+	text-decoration: none;
+	}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background-color: #f8f9fa;
+	color: #222;
+	font-family: "Open Sans", Arial, Sans-serif;
+	line-height: 1.6;
+	
+}
+
+nav ul{
+	list-style-type: none;
+	background-color: #004c6d;
+	display: flex;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+
+nav ul li a{
+	color: white;
+	padding: 14px 20px;
+	transition: background 0.3s;
+	text-decoration: none;
+	display: block;
+	
+}
+
+nav ul li a:hover {
+	background-color: #006a90;
+}
+
+
+main h3 {
+	color: #004c6d;
+	border-bottom: 2px solid #00b894;
+	padding-top: 30px;
+	margin-top: 10px;
+	
+}
+
+main p {
+	line-height: 1.6;
+	margin-top: 10px;
+	
+}
+
+main img {
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	margin: 20px 0px;
+}
+
+/* Aqui defino el estilo de la galeria */
+
+.galeria {
+	justify-content: center;
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	
+}
+.galeria img {
+	width: 28%;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	
+}
+
+.galeria img:hover {
+	transform: scale(1.05);
+}
+
+.imagen600 { 
+width: 600px;
+margin: 0px auto;
+display: block;
+}
+
+table {
+	width: 90%;
+	margin: 30px auto;
+	font-size: 0.95em;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	box-shadow:  0 3px 10px rgba(0,0,0,0.1);
+	border-radius: 8px;
+	
+}
+
+table thead {
+	background-color: #004c6d;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	
+}
+
+th, td {
+	padding: 12px 15px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	font-family: "Montserrat", Sans-serif;
+	font-size: 0.9em;
+	
+}
+tr:hover {
+	background-color: #e4f1f7;
+	transition: background 0.3s;
+	
+}
+
+table tbody tr:nth-child(even) {
+	background-color: #f6f8fa;
+	
+}
+
+table td {
+	color: #333;
+	
+}
+
+/* --- Campos del formulario --- */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Espacio vertical de 10px */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* --- Botones --- */
+.botones {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px; /* Espacio de 10px entre los botones */
+  margin-top: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="reset"] {
+  background-color: #ddd;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background-color: #bbb;
+}
