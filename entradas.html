@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<!--La etiqueta title establece el titulo de la pagina -->
+		<title>Expo Vacaciones 2025</title>
+		
+		<!--Las etiquetas meta contienen los diferentes metadatos de la pagina -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Web de Expo Vacaciones 2025">
+		<meta name="keywords" content="Vacaciones,Viajes,Congreso">
+		<meta name="author" content="Ibai Peñalver">
+
+		<!--La etiqueta link enlaza con la hoja de estilos externa -->
+		<link rel="stylesheet" href="./estilos/estilos.css">
+	
+	</head>
+	
+	
+	
+	<body>
+		<header>
+			<!--H1 y H2 son las cabeceras -->
+			<h1>Expo Vacaciones 2025</h1>
+			
+			<h2>Bienvenidos a Expo Vacaciones 2025</h2>
+			
+		</header>
+			
+			<!--Nav, es utilizado para crear el menu de navegación -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="entradas.html">Entradas</a></li>
+				<li><a href="galeria_fotos.html">Galeria de fotos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+			
+		</nav>
+		
+		<main>
+			<h3>Compra tus entradas con descuento en Expo Vacaciones</h3>
+			<p>Durante la feria podrás acceder a precios exclusivos para los mejores parques de atracciones, museos y centros culturales del mundo. ¡Aprovecha las ofertas y vive experiencias inolvidables!</p>
+			<h3>🎢 Parque Warner Madrid</h3>
+			<p>Disfruta de montañas rusas, espectáculos y tus personajes favoritos en uno de los parques más divertidos de Europa.
+			Más información en su web oficial:<a href="https://www.parquewarner.com" target="_blank"> www.parquewarner.com</a></p>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Tipo de entrada</th>
+						<th>Precio</th> 
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Adulto</th>
+						<th>39,90 €</th>
+						<th>Entrada de día completo para mayores de 11 años</th>
+					</tr>
+					<tr>
+						<th>Niño</th>
+						<th>32,90 €</th> 
+						<th>Entrada para niños de 7 a 10 años.</th>
+					</tr>
+					<tr>
+						<th>Bebé</th>
+						<th>Gratis</th>
+						<th>Menores de 7 años entran sin coste.</th>
+					</tr>
+				</tbody>
+			</table>
+			
+			<img src="./imagenes/warner.jpg" alt="Montaña rusa en Parque Warner Madrid">
+			
+			<h3>🏛️ Museo del Prado</h3>
+			<p>Descubre una de las pinacotecas más importantes del mundo, con obras de Velázquez, Goya y Rubens.
+			Más información en:<a href="https://www.museodelprado.es" target="_blank">www.museodelprado.es</a></p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Tipo de entrada</th>
+						<th>Precio</th> 
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Adulto</th>
+						<th>15,00 €</th>
+						<th>Entrada general con acceso a colecciones permanentes.</th>
+					</tr>
+						<th>Niño</th>
+						<th>7,50 €</th> 
+						<th>Entrada reducida para menores de 18 años.</th>
+					</tr>
+					<tr>
+						<th>Bebé</th>
+						<th>Gratis</th>
+						<th>Menores de 3 años entran sin coste.</th>
+					</tr>
+				</tbody>
+			</table>
+			
+			<img src="./imagenes/museo_prado.jpg" alt="Fachada del Museo del Prado en Madrid">
+			
+			<h3>🌍 Disneyland París</h3>
+			<p>Vive la magia de Disney en el corazón de Europa. Atracciones, desfiles y la oportunidad de conocer a tus personajes favoritos.
+			Más información en:<a href="https://www.disneylandparis.com" target="_blank">www.disneylandparis.com</a></p>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>Tipo de entrada</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Adulto</th>
+						<th>62,00 €</th>
+						<th>Entrada de un día, un parque.</th>
+					</tr>
+					<tr>
+						<th>Niño</th>
+						<th>57,00 €</th>
+						<th>Niños de 3 a 11 años.</th>
+					</tr>
+					<tr>
+						<th>Bebé</th>
+						<th>Gratis</th>
+						<th>Menores de 3 años entran sin coste.</th>
+					</tr>
+				</tbody>
+			</table>
+			
+			<img src="./imagenes/disneyland.jpg" alt="Castillo de Disneyland París">
+			
+			<p>Todas las entradas se pueden comprar durante Expo Vacaciones 2025 con un 10% de descuento exclusivo.
+			No pierdas la oportunidad de planificar tus próximas aventuras al mejor precio.</p>
+			<h4>Calcula el precio de tus entradas</h4>
+			<label>Adultos:<input type="number" id="adultos" min="0"></label>
+			<label>Niños:<input type="number" id="ninos" min="0"></label>
+			<label>Bebés:<input type="number" id="bebes" min="0"></label>
+			<button onclick="calculadora()">Calcular</button>
+			<p id="resultado"></p>
+			
+		</main>
+		
+		<footer>
+			<p>2025 | Exposición internacion de vacaciones. Bilbao, España.</p>
+			<p>
+			  Síguenos en 
+			  <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+			  <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+			</p>
+		</footer>
+		<script src="./funciones/funciones.js"></script>
+	</body>
+</html>

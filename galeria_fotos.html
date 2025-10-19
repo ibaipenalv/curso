@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<!--La etiqueta title establece el titulo de la pagina -->
+		<title>Expo Vacaciones 2025</title>
+		
+		<!--Las etiquetas meta contienen los diferentes metadatos de la pagina -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Web de Expo Vacaciones 2025">
+		<meta name="keywords" content="Vacaciones,Viajes,Congreso">
+		<meta name="author" content="Ibai Peñalver">
+
+		<!--La etiqueta link enlaza con la hoja de estilos externa -->
+		<link rel="stylesheet" href="./estilos/estilos.css">
+		
+	</head>
+		
+	
+		
+		
+		
+	<body>
+		<header>
+			<!--H1 y H2 son las cabeceras -->
+			<h1>Expo Vacaciones 2025</h1>
+			
+			<h2>Bienvenidos a Expo Vacaciones 2025</h2>
+			
+		</header>
+			
+			<!--Nav, es utilizado para crear el menu de navegación -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="destinos.html">Destinos</a></li>
+				<li><a href="entradas.html">Entradas</a></li>
+				<li><a href="galeria_fotos.html">Galeria de fotos</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+			
+		</nav>
+		
+		<main>
+		<img id="imagen-ampliada" style="display:none;max-width:90%;cursor:pointer;margin:20px auto; border:3px solid #333; border-radius:10px;">
+		<h3>Explora la magia de Expo Vacaciones</h3>
+		<p>Aquí te mostramos algunos de los mejores momentos y rincones del evento: stands, destinos, actividades y sonrisas.
+		Cada imagen refleja el espíritu de los viajes, la diversidad cultural y la pasión por descubrir el mundo.</p>
+		
+		<div class="galeria">
+			<img src="./imagenes/feria_entrada.jpg" alt="Entrada principal a la feria de viajes">
+			<img src="./imagenes/stand_agencia.jpg" alt="Stand de una agencia de viajes internacional">
+			<img src="./imagenes/conferencia_turismo.jpg" alt="Charla sobre turismo sostenible">
+			<img src="./imagenes/visitantes_feria.jpg" alt="Visitantes explorando la feria">
+			<img src="./imagenes/stand_asia.jpg" alt="Zona temática dedicada a Asia">
+			<img src="./imagenes/stand_caribe.jpg" alt="Zona dedicada al Caribe con decoración tropical">
+			<img src="./imagenes/presentacion_destinos.jpg" alt="Presentación de nuevos destinos turísticos">
+			<img src="./imagenes/area_gastronomica.jpg" alt="Área gastronómica internacional">
+			<img src="./imagenes/show_cultural.jpg" alt="Actuación cultural en el escenario principal">
+		</div>
+
+		<p>Todas las fotografías pertenecen a la edición anterior del evento.<br>
+		¡Ven este año y forma parte de la próxima galería de Expo Vacaciones 2025!</p>
+		
+		<footer>
+			<p>2025 | Exposición internacional de vacaciones. Bilbao, España.</p>
+			<p>
+			  Síguenos en 
+			  <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+			  <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+			</p>
+		</footer>
+		<script src="./funciones/funciones.js"></script>
+		<script>galeriaSimple();</script>
+	</body>
+</html>
